@@ -14,7 +14,8 @@ After the Pomodoro, a sound plays at the end that successfully indicates that th
  # Usage
   
   ```bash
-  Run main.py file.```` 
+  Run main.py file.
+  ```` 
   
 If you want to change the timer, change the number 25 to any other, the main point 25 is minutes, which means that the number that you insert there will already be in minutes!
   
