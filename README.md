@@ -1,10 +1,10 @@
 
 # Interface 
-- Special Pomodoro theme (to change theme tap to Pomodoro icon)
+- Light theme (to change theme tap to moon icon)
 ![Pomodoro](/img/Light_theme.png)
 - Dark theme (to change theme tap to sun icon)
 ![Pomodoro](/img/Dark_theme.png)
-- Light theme (to change theme tap to moon icon)
+- Special Pomodoro theme (to change theme tap to Pomodoro icon)
 ![Pomodoro](/img/Pomodoro_theme.png)
 
 After the Pomodoro, a sound plays at the end that successfully indicates that the time is up.
