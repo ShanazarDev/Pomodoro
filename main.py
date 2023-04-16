@@ -21,7 +21,7 @@ class Threading(QtCore.QThread):
         self.pomodoro_count = []
         self.break_down_song = AudioSegment.from_file("audio/pomodoro_end.mp3")
 
-    # Countdown timer runner funciton
+    # Countdown timer runner function
     def run(self):
         self.WINDOW.start_time.setDisabled(True)
         min_25 = 60 * 25  # 25 minutes
@@ -105,7 +105,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(640, 480)
 
-        # Size policy are fixed to more visibilty
+        # Size policy are fixed to more visibility
         sizePolicy = QtWidgets.QSizePolicy(
             QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -119,7 +119,7 @@ class Ui_MainWindow(object):
         MainWindow.setMaximumSize(QtCore.QSize(
             640, 480))      # Minimum Window size
 
-        # To centriez all elements
+        # To centring all elements
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
 
@@ -394,7 +394,7 @@ class Ui_MainWindow(object):
 
     # Hide Sound off button when sound off mode selected
     def hide_sound_off_button(self):
-        # Addtional settings from hide_sound_on_button function
+        # Additional settings from hide_sound_on_button function
         self.thread.sound_signal.append(1)
 
         self.sound_on_button.setVisible(True)
@@ -637,7 +637,7 @@ class Ui_MainWindow(object):
     def closeApp(self):
         sys.exit()
 
-    # Translater to promote all labels text
+    # Translator to promote all labels text
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate(
@@ -659,6 +659,6 @@ if __name__ == "__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
-    ui.light()              # For activate light theme previsoly
+    ui.light()              # For activate light theme previously
     MainWindow.show()
     sys.exit(app.exec_())
