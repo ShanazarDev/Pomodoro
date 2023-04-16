@@ -1,3 +1,3 @@
 # Pomodoro
 > Very cute Pomodoro app
-Pomodoro timer
+<h2>Pomodoro timer
