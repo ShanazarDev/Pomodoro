@@ -17,7 +17,7 @@ class Threading(QtCore.QThread):
         self.min_15_count = []
         self.sound_signal = []
         self.pomodoro_count = []
-        self.break_down_song = AudioSegment.from_file("D:\@_Python Projects\My Finally Projects\Pomodoro/audio/pomodoro_end.mp3")
+        self.break_down_song = AudioSegment.from_file("audio/pomodoro_end.mp3")
 
     # Countdown timer runner funciton
     def run(self):
