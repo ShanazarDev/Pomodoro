@@ -6,6 +6,8 @@ import sys
 import time
 
 
+# If you have "TSCu_Comic" font on your PC. PLease rename font "Times New Roman" to "TSCu_Comic" for more cute application
+
 class Threading(QtCore.QThread):
 
     def __init__(self, window, parent=None):
@@ -22,7 +24,7 @@ class Threading(QtCore.QThread):
     # Countdown timer runner funciton
     def run(self):
         self.WINDOW.start_time.setDisabled(True)
-        min_25 = 5  # 25 minutes 
+        min_25 = 60 * 25  # 25 minutes
         while min_25 > 0:
             min_25 -= 1
             self.minutes, self.seconds = divmod(min_25, 60)
@@ -41,7 +43,7 @@ class Threading(QtCore.QThread):
             for i in self.min_5_count:
                 if i == 5:
                     print('start_5min')
-                    min_5 = 6
+                    min_5 = 60 * 5
                     while min_5 > 0:
                         min_5 -= 1
                         self.minutes, self.seconds = divmod(min_5, 60)
@@ -127,7 +129,7 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         font.setBold(False)
         font.setPointSize(20)
-        font.setFamily("TSCu_Comic")
+        font.setFamily("Times New Roman")
 
         # Shadow effect for Pomodoro label
         shadow = QGraphicsDropShadowEffect()
@@ -153,7 +155,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setBold(True)
         font.setPointSize(30)
-        font.setFamily("TSCu_Comic")
+        font.setFamily("Times New Roman")
 
         # Shadow effect for countdown timer
         shadow = QGraphicsDropShadowEffect()
@@ -183,7 +185,7 @@ class Ui_MainWindow(object):
                                     background-color: white;
                                     border: 1px solid black;
                                     border-radius: 15px;
-                                    font-family: TSCu_Comic;
+                                    font-family: Times New Roman;
                                 }
                                 QPushButton:hover
                                 {  
@@ -197,12 +199,12 @@ class Ui_MainWindow(object):
 
         # Fonts for label
         font = QtGui.QFont()
-        font.setFamily("TSCu_Comic")
+        font.setFamily("Times New Roman")
         font.setPointSize(15)
 
         # Break time info label
         self.break_time = QtWidgets.QLabel(self.centralwidget)
-        self.break_time.setGeometry(QtCore.QRect(225, 320, 210, 20))
+        self.break_time.setGeometry(QtCore.QRect(200, 320, 250, 20))
         self.break_time.setFont(font)
         self.break_time.setAlignment(QtCore.Qt.AlignCenter)
         self.break_time.setObjectName("break_time")
@@ -215,7 +217,7 @@ class Ui_MainWindow(object):
                                         QPushButton
                                         {
                                             border-radius: 17px;
-                                            font-family: TSCu_Comic;
+                                            font-family: Times New Roman;
                                             border: 1px solid black;
                                         }
                                         QPushButton:hover
@@ -232,7 +234,7 @@ class Ui_MainWindow(object):
         self.pomodors.setStyleSheet("""
                                             QLabel
                                             {
-                                                font-family: TSCu_Comic;
+                                                font-family: Times New Roman;
                                             }
                                             """)
 
@@ -293,7 +295,7 @@ class Ui_MainWindow(object):
                                         {
                                             background-color: #adadff;
                                             border: 1px solid black;
-                                            font-family: TSCu_Comic;
+                                            font-family: Times New Roman;
                                             border-radius: 15px;
                                         }
                                         QPushButton:hover
@@ -472,7 +474,7 @@ class Ui_MainWindow(object):
                                 color: #AEB6BF;
                                 border: 2px solid #ABB2B9;
                                 border-radius: 15px;
-                                font-family: TSCu_Comic;
+                                font-family: Times New Roman;
                             }
                             QPushButton:hover
                             {  
@@ -489,7 +491,7 @@ class Ui_MainWindow(object):
                                                 QLabel
                                                 {
                                                     color: #AEB6BF;
-                                                    font-family: TSCu_Comic;
+                                                    font-family: Times New Roman;
                                                 }
                                             """)
 
@@ -544,7 +546,7 @@ class Ui_MainWindow(object):
                                 background-color: rgba(64, 71, 69, 20);
                                 border: 1px solid black;
                                 border-radius: 15px;
-                                font-family: TSCu_Comic;
+                                font-family: Times New Roman;
                             }
                             QPushButton:hover{  
                                 background-color: #82E0AA;
@@ -557,7 +559,7 @@ class Ui_MainWindow(object):
                                         QLabel
                                         {
                                             color: black;
-                                            font-family: TSCu_Comic;
+                                            font-family: Times New Roman;
                                         }
                                     """)
         self.break_time.setStyleSheet('color: black;')
@@ -605,7 +607,7 @@ class Ui_MainWindow(object):
                                 background-color: #5A002C;
                                 border: 1px solid black;
                                 border-radius: 15px;
-                                font-family: TSCu_Comic;
+                                font-family: Times New Roman;
                             }
                             QPushButton:hover{  
                                 background-color: #82E0AA;
@@ -618,7 +620,7 @@ class Ui_MainWindow(object):
                                         QLabel
                                         {
                                             color: black;
-                                            font-family: TSCu_Comic;
+                                            font-family: Times New Roman;
                                         }
                                     """)
         shadow_3 = QGraphicsDropShadowEffect()
