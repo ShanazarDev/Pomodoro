@@ -1,16 +1,15 @@
 # Pomodoro
 > Very cute Pomodoro app
 
-<h1> After the Pomodoro, a sound plays at the end that successfully indicates that the time is up. </h1>
-
-# Interface
-- Light theme (to change theme tap to moon icon)
-- Dark theme (to change theme tap to sun icon)
+# Interface 
 - Special Pomodoro theme (to change theme tap to Pomodoro icon)
 ![Pomodoro](/img/Light_theme.png)
+- Dark theme (to change theme tap to sun icon)
 ![Pomodoro](/img/Dark_theme.png)
+- Light theme (to change theme tap to moon icon)
 ![Pomodoro](/img/Pomodoro_theme.png)
 
+After the Pomodoro, a sound plays at the end that successfully indicates that the time is up.
 
 
 
