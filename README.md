@@ -1,6 +1,11 @@
 # Pomodoro
 > Very cute Pomodoro app
 
+# Interface
+
+
+
+
  # Usage
   
   Run main.py file. 
