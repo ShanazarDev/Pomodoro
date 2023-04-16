@@ -2,6 +2,7 @@
 > Very cute Pomodoro app
 
 # Interface
+![Pomodoro](/img/light_theme.png)
 
 
 
