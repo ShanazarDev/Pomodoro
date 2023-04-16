@@ -1,5 +1,3 @@
-# Pomodoro
-> Very cute Pomodoro app
 
 # Interface 
 - Special Pomodoro theme (to change theme tap to Pomodoro icon)
