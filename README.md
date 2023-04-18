@@ -32,7 +32,7 @@ min_10 = 60 * 10 # 10 minutes break
 min_15 = 60 * 15 # 15 minutes break
 ```
 
-# If you don't have ffmpeg or you don't need the sound delete that strings of code
+# If you don't have ffmpeg or you don't need the sound delete that lines of code
 ```python
         self.sound_signal = []
 
