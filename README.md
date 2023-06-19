@@ -1,4 +1,4 @@
-# Chech realses
+# Check realses
 Added language support!
 
 
