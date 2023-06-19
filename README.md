@@ -1,3 +1,6 @@
+# Chech realses
+Added language support!
+
 
 # Interface 
 - Light theme (to change theme tap to moon icon)
