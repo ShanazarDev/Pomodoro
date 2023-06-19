@@ -1,4 +1,4 @@
-# Check realses
+# Check releases
 Added language support!
 
 
